@@ -77,6 +77,9 @@ const TaskLogic = ({ taskId, navigate, children }) => {
       await axiosInstance.post(API_PATHS.TASKS.CREATE_TASK, requestBody);
 
       toast.success(`Task created successfully.}.`);
+      setTimeout(() => {
+        navigate("/admin/tasks");
+      }, 500);
       clearData();
 
       if (teamMode === "new") {
