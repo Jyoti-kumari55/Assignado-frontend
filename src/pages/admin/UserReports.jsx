@@ -6,11 +6,12 @@ import { BiTask } from "react-icons/bi";
 import axiosInstance from "../../utils/axiosInstance";
 import { API_PATHS } from "../../utils/apiPaths";
 import toast from "react-hot-toast";
-import CustomPieChart from "../../components/Charts/CustomPieChart";
-import CustomBarChart from "../../components/Charts/CustomBarChart";
+
 import { useUserAuth } from "../../hooks/useUserAuth";
 import { UserContext } from "../../context/userContext";
 import Loader from "../../components/Loader";
+import CustomBarChart from "../../components/charts/CustomBarChart";
+import CustomPieChart from "../../components/charts/CustomPieChart";
 
 const COLORS = ["#8D51FF", "#00B8DB", "#7BCE00"];
 
